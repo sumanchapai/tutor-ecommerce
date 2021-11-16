@@ -49,5 +49,5 @@
   ecommerce-sso \
   ecommerce
 
-  # Enable order bistory microfrontend
+  # Enable order history microfrontend
   (./manage.py lms waffle_switch --list | grep order_history.redirect_to_microfrontend) || ./manage.py lms waffle_switch --create order_history.redirect_to_microfrontend on
